@@ -67,6 +67,8 @@ for i in range(iterations):
     s = np.min([1, s])
 
 plt.plot(sl)
+plt.xlabel("iterations")
+plt.ylabel("s (strength)")
 print("stimulus[%f] -------- g --------> strength@fp[%f]:" % (stimulus, sl[-1]))
 plt.savefig("trajectory.png")
 plt.show()
